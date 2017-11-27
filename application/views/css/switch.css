@@ -1,0 +1,63 @@
+    .carousel {
+        height: 400px;
+        width:95%;
+    }
+    .carousel .item {
+        height: 400px;
+    }
+    .carousel .item img {
+        width: 100%;
+    }
+    .body{
+        padding-top:50px;
+    }
+    .body-left{
+    }
+    .body-right1{ 
+        height:864px;
+        width:154px;
+    }
+    .wenzhang1{
+        width:420px;
+        padding-top:20px;
+        padding-left:50px;
+        height:170px;
+    }
+    .wenzhang2{
+        width:420px;
+        padding-top:210px;
+        padding-left:50px;
+        height:170px;
+    }
+    .wenzhang3{
+        width:420px;
+        padding-top:390px;
+        padding-left:50px;
+        height:170px;
+    }
+    .wenzhang4{
+        width:420px;
+        padding-top:400px;
+        padding-left:50px;
+        height:170px;
+    }
+    .wenzhangtupian1{
+        height:70px;
+        width:140px;
+        background-image:url(%E7%AB%99%E7%82%B9/%E9%A6%96%E9%A1%B5%E7%B4%A0%E6%9D%90/12.jpg)
+    }
+    .wenzhangtupian2{
+        height:70px;
+        width:140px;
+        background-image:url(%E7%AB%99%E7%82%B9/%E9%A6%96%E9%A1%B5%E7%B4%A0%E6%9D%90/12.jpg)
+    }
+    .wenzhangtupian3{
+        height:70px;
+        width:140px;
+        background-image:url(%E7%AB%99%E7%82%B9/%E9%A6%96%E9%A1%B5%E7%B4%A0%E6%9D%90/12.jpg)
+    }
+    .wenzhangtupian4{
+        height:70px;
+        width:140px;
+        background-image:url(%E7%AB%99%E7%82%B9/%E9%A6%96%E9%A1%B5%E7%B4%A0%E6%9D%90/12.jpg)
+    }

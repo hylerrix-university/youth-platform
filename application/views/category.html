@@ -1,0 +1,55 @@
+<?php $this->load->view('header.html');?>
+
+
+<br/>
+ 
+<!-- 文章区================================================== -->
+<div class="container">
+    <div class="row row-offcanvas row-offcanvas-right">   
+        <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">导航文章</button>
+        </p>
+        <div class="col-xs-11 col-sm-9">
+            <p align="center">该文章分类为：<?php echo $one_category['name'];?>，有如下文章：</p>
+            <!-- <div class="row">-->
+            <!--foreach-->
+            <?php foreach ($category_article as $v):?> 
+            <div class="wenzhang">
+                <div class="wenzhangtupian">
+                    <img  src="<?php echo base_url('application/views/images/indexshow/index.jpg');?>" alt=""> 
+                </div>
+                <div class="wenzhangwenzhi">
+                    <h4><strong><?php echo $v['title'];?></strong></h4>
+                    <p>$<?php echo $v['brief'];?></p> 
+                    <p><a href="<?php echo site_url('welcome/scan').'/'.$v['article_id'];?>" role="button">阅览全文 &raquo;</a></p>
+                    
+                        <div class="xinxi">
+                            <p>作者:<?php echo $v['user_id'];?> 时间<?php echo $v['mdate'];?></p>
+                        </div>
+                </div>
+            </div>
+            <?php endforeach;?>  
+            <br/><br/><br/><br/>
+            <nav>
+                <ul class="pager">
+                    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+                    <li class="next"><a href="#">下一页<span aria-hidden="true">&rarr;</span></a></li>
+                </ul>
+            </nav>
+            <!--/.col-xs-6.col-lg-4-->
+            <!--endforeach-->
+            <!--/row-->      
+        </div><!--/.col-xs-11.col-sm-9-->
+        <div class=" col-xs-1 col-sm-3 sidebar-offcanvas" id="sidebar">
+            <div class="list-group">
+                <br/><br/><br/>
+                <?php foreach($category as $v):?>
+                    <a href="<?php echo site_url('welcome/category').'/'.$v['category_id'];?>" class="list-group-item"><?php echo $v['name']?></a>
+                  <?php endforeach;?>
+            </div>
+       </div><!--/.sidebar-offcanvas-->
+   </div><!--/row-->
+</div><!--container-->  
+<!-- 文章区================================================== -->
+
+<?php $this->load->view('footer.html');?>

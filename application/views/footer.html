@@ -1,0 +1,246 @@
+
+      <br /><br />
+
+<!-- FOOTER================================================== -->
+<footer class="footer foot1">
+      <div class="container">
+            <div class="row footer-top">
+               <div class="row  about">
+                 <div class="col-xs-3">
+                  <h4>关于我们</h4>
+                   <ul class="list-unstyled">
+                       <li><a href="/ppt/" title="关于这个网站" target="_blank">网站介绍</a></li>
+                    <li>QQ咨询群：271266597</li>
+                   </ul>
+                 </div>
+                 <div class="col-xs-3">
+                   <h4>联系方式</h4>
+                   <ul class="list-unstyled">
+                     <li><a href="http://weibo.com/u/5643534445" title="负责人微博" target="_blank">新浪微博</a></li>
+                     <li><a href="mailto:429348384@qq.com">电子邮件</a></li>
+                   </ul>
+                 </div>
+                 <div class="col-xs-3">
+                   <h4>环境支持</h4>
+                   <ul class="list-unstyled">
+                     <li><a href="http://sae.sina.com.cn" target="_blank">新浪云</a></li>
+                     <li><a href="https://aws.amazon.com/cn/?nc2=h_lg" target="_blank">亚马逊云</a></li>
+                   </ul>
+                 </div>
+                 <div class="col-xs-3">
+                   <h4>技术支持</h4>
+                   <ul class="list-unstyled">
+                     <li><a href="http://www.bootcss.com/" target="_blank">Bootstrap</a></li>
+                     <li><a href="http://tortoisesvn.net/" target="_blank">tortoisesvn</a></li>
+                   </ul>
+                 </div>
+             </div>
+           </div>
+        <hr/>
+           <div class="row footer-bottom">
+             <ul class="list-inline text-center">
+               <li>Copyright © 励青春 | 2015-2015</li>
+             </ul>
+           </div>
+      </div>
+</footer>
+      
+</div>
+<!-- FOOTER================================================== -->
+
+
+<div class="modal" id="mymodal1" tabindex="-1">
+    <div class="modal-dialog">
+		<center>
+          <br /><br /><br /><br /><br /><br />
+          <div class="jumbotron">
+            <div class="row">
+              <div class="col-sm-1">
+              </div>
+              <div class="col-sm-10">
+                <h3>登陆你的&nbsp;&nbsp;励青春&nbsp;&nbsp;账号</h3>
+                <form action="<?php echo site_url('user/login');?>" method="post" class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <label for="inputEmail" class="sr-only">登录邮箱</label>
+                            <input type="email" name="username" id="inputEmail" class="form-control" placeholder="登录邮箱" required autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <div class="col-sm-12">
+                        <label for="inputPassword" class="sr-only">登陆密码</label>
+                        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="登陆密码" required>
+                    </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                            <div class="btn-group" role="group">
+                                <a class="btn btn-default btn-primary"  href="javascript:quzhece()">还没注册？</a>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <a class="btn btn-default" href="<?php echo site_url('welcome/index');?>">取消</a>
+                            </div>
+                            <div class="btn-group" role="group">
+                              <button type="submit" class="btn btn-default btn-success">登陆</button>
+                            </div>
+                        </div> 
+                    </div>
+                </form>
+              </div>
+              <div class="col-sm-1">
+              </div>
+            </div>
+        </div>
+    </center>
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal" id="mymodal2" tabindex="-1">
+    <div class="modal-dialog">
+         <center>
+            <br /><br /><br /><br /><br /><br />
+            <div class="jumbotron">
+            <div class="row">
+              <div class="col-sm-1">
+              </div>
+              <div class="col-sm-10">
+                  <h3>注册一个&nbsp;&nbsp;励青春&nbsp;&nbsp;的账号！</h3>
+                  <br /><br /><br />
+                  <form action="<?php echo site_url('user/do_register');?>" method="post" class="form-horizontal">
+                    <div class="form-group">
+                         <div class="col-sm-12">
+                          <label for="inputEmail" class="sr-only">邮箱账号</label>
+                          <input type="email" id="inputEmail" name="username" class="form-control" placeholder="用邮箱登陆" required autofocus>
+                         </div>
+                   </div>
+                   <div class="form-group">  
+                        <div class="col-sm-12">
+                          <label for="inputPassword" class="sr-only">登陆密码</label>
+                          <input type="password" name="password" class="form-control" placeholder="填写您的密码(6-13位)" required autofocus>
+                        </div>        
+                  </div>
+                  <div class="form-group">
+                       <div class="col-sm-12">
+                          <label for="inputPassword" class="sr-only">确认密码</label>
+                          <input type="password" name="repassword" class="form-control" placeholder="确认密码" required autofocus>
+                       </div>
+                 </div>
+                    <div class="col-sm-12">           
+                      <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                            <div class="btn-group" role="group">
+                                <a  class="btn btn-default btn-primary" href="javascript:qudenglu()">已经注册？</a>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <a  class="btn btn-default " href="<?php echo site_url('welcome/index');?>">取消</a>
+                            </div>
+                            <div class="btn-group" role="group">
+                              <button type="submit" class="btn btn-default btn-success">注册</button>
+                            </div>
+                       </div>
+                    </div>
+                  </form>
+                </div>
+              <div class="col-sm-1">
+            </div>
+          </div>
+        </div>
+      </center>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- FOOTER================================================== -->
+
+
+
+<!-- SCRIPT================================================== -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+       /*!
+     * IE10 viewport hack for Surface/desktop Windows 8 bug
+     * Copyright 2014-2015 Twitter, Inc.
+     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+     */
+    // See the Getting Started docs for more information:
+    // http://getbootstrap.com/getting-started/#support-ie10-width
+    (function () {
+      'use strict';
+
+      if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement('style')
+        msViewportStyle.appendChild(
+          document.createTextNode(
+            '@-ms-viewport{width:auto!important}'
+          )
+        )
+        document.querySelector('head').appendChild(msViewportStyle)
+      }
+    })();
+    </script>
+    <script> 
+        $(document).ready(function () {
+        $('[data-toggle="offcanvas"]').click(function () {
+        $('.row-offcanvas').toggleClass('active')
+         });
+         });
+    </script>
+    <script>
+      $(function(){
+        $("#denglu").click(function(){
+          $("#mymodal1").modal("toggle");
+        });
+      });
+    </script>
+    <script>
+      $(function(){
+        $("#zhuce").click(function(){
+          $("#mymodal2").modal("toggle");
+        });
+      });
+    </script>
+    <script>
+      $(function(){
+        $("#quzhuce").click(function(){
+          $("#zhuce").modal("toggle");
+        });
+      });
+    </script>
+    <script>
+        function closedenglu(){ 
+        document.getElementById('mymodal1').style.display='none'; 
+        document.getElementById('zhuye').style.display='block'; 
+        } 
+        function closezhece(){ 
+        document.getElementById('mymodal2').style.display='none'; 
+        document.getElementById('zhuye').style.display='block'; 
+        }    
+
+        function quzhece(){ 
+        document.getElementById('mymodal1').style.display='none'; 
+        document.getElementById('mymodal2').style.display='block'; 
+        } 
+        function qudenglu(){ 
+        document.getElementById('mymodal2').style.display='none'; 
+        document.getElementById('mymodal1').style.display='block'; 
+        } 
+   </script>
+
+
+<!-- SCRIPT================================================== -->
+
+</body>
+
+</html>

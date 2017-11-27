@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="refresh" content="<?php echo $wait;?>;url=<?php echo $url;?>"> 
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>励青春--丰富青少年学习生活的文章分享平台</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <link href="<?php echo base_url('application/views/css/图片轮播.css');?>" rel="stylesheet">
+    <link href="<?php echo base_url('application/views/css/offcanvas.css');?>" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <style type="text/css">
+        .messagetupian{
+            float:right;
+        }
+        .main{
+            margin-top:200px;
+            
+        }
+        .messagewenzhi{
+            float:left;
+            height:155px;
+            width:300px;
+        }
+        .chucuowenzhi{
+	    font-size: 24px;
+        font-weight: bold;
+        }
+        .tiaowenzhi{
+            font-size:16px;
+        }
+        .messagetupian img{
+            width:100%;
+            height:100%;
+        }
+    </style>  
+  </head>
+
+<body>
+    <div class="row main"> 
+        <div class="col-md-6 col-xs-6">
+            <div class="messagetupian">
+                <img src="<?php echo base_url('application/views/images/succeed.png');?>" width="340" height="155" alt="" />
+            </div>
+        </div>
+        <div class="col-md-6 col-xs-6">
+            <div class="messagewenzhi">
+              <table width="300" height="155" border="0">
+                 <tr>
+                   <td height="114" class="chucuowenzhi">&nbsp;<?php echo $message;?></td>
+                 </tr>
+                 <tr>
+                   <td class="tiaowenzhi">&nbsp;<?php echo $wait;?>秒后自动跳转</td>
+                 </tr>
+              </table>
+           </div>
+        </div>
+    </div>
+ 
+    
+    </body>
+</html>    
+    

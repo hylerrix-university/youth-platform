@@ -1,0 +1,20 @@
+首页
+    index.html
+
+发表页面
+    publish.html
+
+浏览文章页面
+    scan.html
+
+我的主页
+    mine.html
+
+搜索页面
+    search.html
+
+
+功能
+    搜索
+    登录注册是弹框
+    文章标题、内容、简介、图片

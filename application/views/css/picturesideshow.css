@@ -1,0 +1,136 @@
+   .carousel {
+        height: 400px;
+        width:100%;
+    }
+    .carousel .item {
+        height: 400px;
+    }
+.carousel .item img {
+        width: 100%;
+        height:100%;
+    }
+
+  .carouselmine {
+        height: 200px;
+        width:50%;
+    }
+    .carouselmine .item {
+        height: 100%;
+    width:100%;
+    }
+    .carouselmine .item img {
+        width: 100%;
+        height:100%;
+    }
+.wenzhang{
+    height:200px;
+    width:100%; 
+    }
+.wenzhangtupian{
+    margin-top:70px;
+    height:200px;
+    width:40%;
+         
+    }
+.wenzhangwenzhi{
+    float:right;
+    width:40%;
+    margin-top:-220px;
+    margin-right:50px;         
+    }
+
+.wenzhangtupian img{
+    width:100%;
+    }
+.wenzhangbtn{
+    float:right;
+    margin-right:20px;
+    
+}
+.xinxi{
+    float:right;
+}
+.1{
+    margin-right:20px;
+    float:right;
+}
+.foot1{
+   padding-left:30px;
+}
+.fabubtn{
+    float:right;
+    margin-right:20px;
+    margin-top:20px;
+}
+.fabubtn1{
+    float:right;
+    margin-right:50px;
+    margin-top:20px;
+}
+.fabubiaoti{
+    text-align:center;
+    font-size:36px;
+}
+.scanbiaoti{
+     text-align:center;
+}
+.publishzhaiyao{
+   float:left;
+    margin-left:20px;
+    margin-top:20px;
+    
+}
+.publishtupian1{
+   float:right;
+    margin-right:20px;
+    margin-top:-20px;   
+}
+.publishbtn1{
+    margin-top:100px
+}
+
+.div1{
+float: right;
+height: 50px;
+background: #0099FF;
+width: 140px;
+position:relative;
+}
+.div2{
+text-align:center;
+padding-top:8px;
+font-size:25px;
+font-weight:800
+}
+.inputstyle{
+    width: 144px;
+    height: 41px;
+    cursor: pointer;
+    font-size:40px;
+    outline: medium none;
+    position: absolute;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    opacity:0; 
+    left:0px;
+    top: 0px;
+}
+
+.minefabubtn{
+    margin-top:20px;
+    width:100%;
+    height:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

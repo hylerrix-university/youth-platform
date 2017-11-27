@@ -1,0 +1,50 @@
+<?php $this->load->view('header.html');?>
+            
+    
+    
+<!-- 文章区================================================== -->
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+      <div class="col-xs-11 col-sm-9">
+        <p align="center">您搜索的是：<?php echo $ask;?>，如下：</p>
+        <div class="row">
+              <!--foreach-->
+           <div class="col-xs-12 col-lg-12 ">
+              <div class="wenzhang">
+                  <div class="wenzhangtupian">
+                  <img  src="<?php echo base_url('application/views/images/indexshow/index.jpg');?>" alt=""> 
+                  </div>
+                  <div class="wenzhangwenzhi">
+                      <h4><strong><?php echo $search_article['title'];?></strong></h4>
+                      <p><?php echo $search_article['brief'];?></p>
+                      <p><a href="<?php echo site_url('welcome/scan').'/'.$search_article['article_id'];?>" role="button">阅览全文 &raquo;</a></p>
+                     
+                      <div class="xinxi">
+                          <p>作者:<?php echo $search_article['user_id'];?> 时间<?php echo $search_article['mdate'];?></p>
+                      </div>
+                 </div>
+              </div>
+              <br/><br/><br/><br/>
+           </div><!--/.col-xs-6.col-lg-4-->
+              <!--endforeach-->
+          </div><!--/row-->
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-0 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+          <!--foreach-->
+          <br/><br/><br/>
+          <?php foreach($category as $v):?>
+            <a href="<?php echo site_url('welcome/category').'/'.$v['category_id'];?>" class="list-group-item"><?php echo $v['name']?></a>
+          <?php endforeach;?>
+          <!--endforeach-->
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+      
+
+<!-- 文章区================================================== -->
+
+<?php $this->load->view('footer.html');?>

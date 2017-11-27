@@ -1,0 +1,32 @@
+<?php $this->load->view('header.html');?>
+
+<br/>
+ 
+<!-- 文章区================================================== -->
+<div class="container">
+    <div class="row row-offcanvas row-offcanvas-right">   
+        <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">导航文章</button>
+        </p>
+        <div class="col-xs-11 col-sm-9"> 
+            <br/><br/>
+            <h4><center><strong><?php echo $scan_article['title'];?></strong></center></h4> 
+             <p align="right">作者：<?php echo $scan_article['user_id'];?> &nbsp;&nbsp;时间：<?php echo $scan_article['mdate'];?></p>
+             <p><?php echo $scan_article['content'];?></p>
+            <br/><br/><br/><br/>
+
+ 
+        </div><!--/.col-xs-11.col-sm-9-->
+        <div class=" col-xs-1 col-sm-3 sidebar-offcanvas" id="sidebar">
+            <div class="list-group">
+                <br/><br/><br/>
+                <?php foreach($category as $v):?>
+                <a href="<?php echo site_url('welcome/category').'/'.$v['category_id'];?>" class="list-group-item"><?php echo $v['name']?></a>
+                  <?php endforeach;?>
+            </div>
+       </div><!--/.sidebar-offcanvas-->
+   </div><!--/row-->
+</div><!--container-->  
+<!-- 文章区================================================== -->
+
+<?php $this->load->view('footer.html');?>

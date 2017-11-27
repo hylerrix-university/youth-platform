@@ -1,0 +1,99 @@
+<?php $this->load->view('header.html');?>
+
+<!-- 切换卡================================================== -->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12">
+            <div id="carousel-example-generic" class="carousel slide center-block" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active center-block">
+                        <img  src="<?php echo base_url('application/views/images/indexshow/index6.jpg');?>"  alt="">
+                    </div>
+                    <div class="item center-block">
+                        <img  src="<?php echo base_url('application/views/images/slideshow/2.jpg');?>" alt="">
+                    </div>
+                    <div class="item center-block">
+                        <img   src="<?php echo base_url('application/views/images/slideshow/3.jpg');?>"  alt="">
+                    </div>
+                    <div class="item center-block">
+                        <img  src="<?php echo base_url('application/views/images/slideshow/4.jpg');?>"  alt="">
+                    </div>
+                    <div class="item center-block">
+                        <img  src="<?php echo base_url('application/views/images/slideshow/5.jpg');?>"  alt="">
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">上一页</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">下一页</span>
+                    </a>
+               </div>
+            </div> <!--carousel-example-generic-->
+        </div><!--col-xs-12 col-sm-12-->
+    </div>  <!--row-->
+</div><!--container-->
+<!-- 切换卡================================================== -->
+
+<br/>
+
+<!-- 文章区================================================== -->
+<div class="container">
+    <div class="row row-offcanvas row-offcanvas-right">
+        <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">导航文章</button>
+        </p>
+        <div class="col-xs-11 col-sm-9">
+
+            <!-- <div class="row">-->
+            <!--foreach-->
+            <?php foreach ($article as $v):?>
+            <div class="wenzhang">
+                <div class="wenzhangtupian">
+                    <img  src="<?php echo base_url('application/views/images/indexshow/index.jpg');?>" alt="">
+                </div>
+                <div class="wenzhangwenzhi">
+                    <h4><strong><?php echo $v['title'];?></strong></h4>
+                    <p><?php echo $v['brief'];?></p> 
+                    <p><a href="<?php echo site_url('welcome/scan').'/'.$v['article_id'];?>" role="button">阅览全文 &raquo;</a></p>
+                        <div class="xinxi">
+                            <p>作者:<?php echo $v['user_id'];?> 时间<?php echo $v['mdate'];?></p>
+                        </div>
+                </div>
+            </div>
+            <?php endforeach;?>
+            <br/><br/><br/><br/>
+            <div class="minefabubtn">
+            <p><a class="btn btn-info btn-lg btn-block" href="<?php echo site_url('welcome/publish');?>" role="button">我要发布</a></p>
+            </div>
+            <nav>
+                <ul class="pager">
+                    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> 上一页</a></li>
+                    <li class="next"><a href="#">下一页<span aria-hidden="true">&rarr;</span></a></li>
+                </ul>
+            </nav>
+            <!--/.col-xs-6.col-lg-4-->
+            <!--endforeach-->
+            <!--/row-->
+        </div><!--/.col-xs-11.col-sm-9-->
+        <div class=" col-xs-1 col-sm-3 sidebar-offcanvas" id="sidebar">
+            <div class="list-group">
+                <br/><br/><br/>
+                <?php foreach($category as $v):?>
+                    <a href="<?php echo site_url('welcome/category').'/'.$v['category_id'];?>" class="list-group-item"><?php echo $v['name']?></a>
+                  <?php endforeach;?>
+            </div>
+       </div><!--/.sidebar-offcanvas-->
+   </div><!--/row-->
+</div><!--container-->
+<!-- 文章区================================================== -->
+
+<?php $this->load->view('footer.html');?>
